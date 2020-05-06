@@ -7,12 +7,12 @@ from scipy.io import arff
 from keras.layers import Dense, Input, Dropout, concatenate
 from keras.models import Model
 import tensorflow as tf
-from Method_change.Use_randomforest_reduce_dimension import reduce_dimension
+from Use_randomforest_reduce_dimension import reduce_dimension
 from sklearn.decomposition import PCA
 
 
 # from .arff get the data
-data1, meta = arff.loadarff(open(r'D:\LAT_prediction\dataset\BioMedicalDataSet780s-actual-features.arff',
+data1, meta = arff.loadarff(open(r'LATPrediction\dataset\BioMedicalDataSet780s-actual-features.arff',
                                  encoding='utf-8'))
 df = pd.DataFrame(data1)
 dm = pd.DataFrame(meta)

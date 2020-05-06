@@ -13,7 +13,7 @@ from scipy.io import arff
 
 
 # from .arff get the data
-data1, meta = arff.loadarff(open(r'D:\NLP-project\rerealisation\BioMedicalDataSet780s-actual-features.arff',
+data1, meta = arff.loadarff(open(r'LATPrediction\dataset\BioMedicalDataSet780s-actual-features.arff',
                                  encoding='utf-8'))
 df = pd.DataFrame(data1)
 dm = pd.DataFrame(meta)

@@ -7,7 +7,7 @@ public class ShuffleData{
     // use the shuffle way according to CrossValidation.java in Meka tool
     private int[] data;
 
-    public GetData(int capacity){
+    public ShuffleData(int capacity){
         data = new int[capacity];
 
         for (int i = 0; i < capacity; i++){
@@ -33,7 +33,7 @@ public class ShuffleData{
 
     public static void main(String[] args){
         Random rand = new Random(0);
-        GetData dataset = new GetData(780);
+        ShuffleData dataset = new ShuffleData(780);
         dataset.randomize(rand);
 
         for (int i = 0; i < dataset.data.length; i ++){
